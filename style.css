@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    background-color: rgb(177, 173, 173);
+    color: white;
+    font-family: "Poiret", sans-serif;
+    min-height: 100vh;
+}
+
+header{
+    font-size: 3rem;
+    min-height: 15vh;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-size: 1.5rem;
+    min-height: 2vh;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+/*Container for the X and O boxes*/
+.container{
+    max-width: 50%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.2rem;
+}
+
+div div{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(198, 230, 198);
+    /*border: rgb(61, 58, 58) 1px solid;*/
+    min-height: 225px;
+    max-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: navy;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+div div:hover{
+    background-color: white;
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+
+.button-holder {
+    display: block;
+    min-height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.start-button:hover {
+    color: white;
+    transition: all 0.5s ease;
+    background-color: green;
+}
+
+.start-button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+    color: teal;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0;
+    cursor: pointer;
+}
+
+/*The new class of a box filled with 'X' (old value == box1)*/
+.xbox{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(32, 167, 32);
+    border: white 1px solid;
+    min-height: 225px;
+    max-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 15rem;
+    pointer-events: none;
+}
+
+/*The new class of the div container (old value == container)*/
+.gamecontainer{
+    border: red 3px solid;
+    max-width: 50%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.2rem;
+}
+
